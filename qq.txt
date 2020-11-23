@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int sum(int arr[], int s) {
+    int b = 3;
+    int kol = 0;
+
+    for (int i = 0; i < s; ++i) {
+        if (arr[i] < b) {
+            kol += arr[i];  
+        }
+    }
+    return kol;
+}
+
+int main()
+{
+    const int N(5), M(6);
+    int G[N] = { -5, -3, 1, 3, 4 };
+    int V[M] = { -1, 1, 2, 3, 4, 5 };
+    setlocale(LC_ALL, "ru");
+    cout << "Сумма элементов массива G меньших b = " << sum (G, N) << endl;
+    cout << "Сумма элементов массива V меньших b = " << sum (V, M) << endl;
+}
