@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int sum(int arr[], int s) {
+int sum(int arr[], int s) { //functon
     int b = 3;
     int kol = 0;
 
