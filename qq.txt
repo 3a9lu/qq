@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int sum(int arr[], int s) { //functon
+int sum(int arr[], int s) { // functon
     int b = 3;
     int kol = 0;
 
@@ -16,10 +16,10 @@ int sum(int arr[], int s) { //functon
 
 int main()
 {
-    const int N(5), M(6);
+    const int N(5), M(6); // константы
     int G[N] = { -5, -3, 1, 3, 4 };
     int V[M] = { -1, 1, 2, 3, 4, 5 };
     setlocale(LC_ALL, "ru");
-    cout << "Сумма элементов массива G меньших b = " << sum (G, N) << endl;
-    cout << "Сумма элементов массива V меньших b = " << sum (V, M) << endl;
+    cout << "Сумма элементов массива G меньших b = " << sum (G, N) << endl; // вывод
+    cout << "Сумма элементов массива V меньших b = " << sum (V, M) << endl; // вывод
 }
