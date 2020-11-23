@@ -6,18 +6,18 @@ int sum(int arr[], int s) { // functon
     int b = 3;
     int kol = 0;
 
-    for (int i = 0; i < s; ++i) {
+    for (int i = 0; i < s; ++i) { //+1
         if (arr[i] < b) {
             kol += arr[i];   // количество
         }
     }
-    return kol;
+    return kol; // возвращение
 }
 
 int main()
 {
     const int N(5), M(6); // константы
-    int G[N] = { -5, -3, 1, 3, 4 };
+    int G[N] = { -5, -3, 1, 3, 4 }; // массив
     int V[M] = { -1, 1, 2, 3, 4, 5 };
     setlocale(LC_ALL, "ru");
     cout << "Сумма элементов массива G меньших b = " << sum (G, N) << endl; // вывод
