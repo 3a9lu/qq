@@ -8,7 +8,7 @@ int sum(int arr[], int s) { // functon
 
     for (int i = 0; i < s; ++i) {
         if (arr[i] < b) {
-            kol += arr[i];  
+            kol += arr[i];   // количество
         }
     }
     return kol;
